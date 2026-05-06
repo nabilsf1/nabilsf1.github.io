@@ -255,6 +255,61 @@
   });
 
   /**
+   * Portfolio Hero Cards - Show Project Details
+   */
+  window.showPortfolioProject = function(projectName) {
+    const heroSection = document.getElementById('portfolioHeroSection');
+    const detailSection = document.getElementById('portfolioDetailSection');
+    
+    // Hide hero section, show detail section
+    heroSection.style.display = 'none';
+    detailSection.style.display = 'block';
+    
+    // Hide all projects
+    document.querySelectorAll('.portfolio-project-detail').forEach(proj => {
+      proj.style.display = 'none';
+    });
+    
+    // Show selected project
+    const projectElement = document.getElementById(projectName + '-project');
+    if (projectElement) {
+      projectElement.style.display = 'block';
+    }
+    
+    // Scroll to portfolio section
+    setTimeout(() => {
+      const portfolioSection = document.querySelector('#portfolio');
+      if (portfolioSection) {
+        portfolioSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+      
+      // Reinit AOS for new elements
+      if (typeof AOS !== 'undefined') {
+        AOS.refresh();
+      }
+    }, 300);
+  };
+
+  /**
+   * Back to Hero Cards
+   */
+  window.backToHero = function() {
+    const heroSection = document.getElementById('portfolioHeroSection');
+    const detailSection = document.getElementById('portfolioDetailSection');
+    
+    heroSection.style.display = 'block';
+    detailSection.style.display = 'none';
+    
+    // Scroll back to portfolio
+    setTimeout(() => {
+      const portfolioSection = document.querySelector('#portfolio');
+      if (portfolioSection) {
+        portfolioSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }, 300);
+  };
+
+  /**
    * Init swiper sliders
    */
   function initSwiper() {

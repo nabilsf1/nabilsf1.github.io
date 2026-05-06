@@ -391,104 +391,183 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Portfolio</h2>
-        <p>Berikut beberapa karya terbaru saya untuk brand Mistik, Hive, dan SENJAYA. Klik ikon tautan untuk melihat postingan lengkap di Instagram.</p>
+        <p>Berikut beberapa karya yang pernah saya buat:</p>
       </div><!-- End Section Title -->
 
-      <div class="container">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        
+        <!-- Hero Portfolio Cards -->
+        <div class="portfolio-hero-section" id="portfolioHeroSection">
+          <div class="row portfolio-hero-cards">
+            
+            <!-- MISTIK Card -->
+            <div class="col-lg-3 col-md-6 mb-4">
+              <img src="assets/img/portfolio/MISTIK LOGO.jpg" alt="MISTIK Logo" class="img-fluid" onclick="showPortfolioProject('mistik')" style="cursor: pointer;">
+            </div>
 
-        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+            <!-- HIVE Card -->
+            <div class="col-lg-3 col-md-6 mb-4">
+              <img src="assets/img/portfolio/logo hive.png" alt="Hive Logo" class="img-fluid" onclick="showPortfolioProject('hive')" style="cursor: pointer;">
+            </div>
 
-          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
-            <li data-filter="*" class="filter-active">All</li>
-            <li data-filter=".filter-mistik">Mistik</li>
-            <li data-filter=".filter-hive">Hive</li>
-            <li data-filter=".filter-senjaya">SENJAYA</li>
-          </ul><!-- End Portfolio Filters -->
+            <!-- SENJAYA Card -->
+            <div class="col-lg-3 col-md-6 mb-4">
+              <img src="assets/img/portfolio/JAYA.png" alt="Senjaya Logo" class="img-fluid" onclick="showPortfolioProject('senjaya')" style="cursor: pointer;">
+            </div>
 
-          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+          </div>
+        </div>
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-mistik">
-              <img src="assets/img/portfolio/MISTIK LOGO.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Mistik</h4>
-                <p>Instagram profile content showcase</p>
-                <a href="assets/img/portfolio/MISTIK LOGO.jpg" title="Mistik" data-gallery="portfolio-gallery-mistik" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="https://www.instagram.com/mistikkk77?igsh=MTIwdTJzbHJ0enFqcw==" title="View on Instagram" class="details-link" target="_blank" rel="noopener noreferrer"><i class="bi bi-link-45deg"></i></a>
+        <!-- Portfolio Project Details -->
+        <div class="portfolio-detail-section" id="portfolioDetailSection" style="display: none;">
+          
+          <!-- Back Button -->
+          <div class="portfolio-back-button mb-4">
+            <button onclick="backToHero()" class="btn btn-outline-secondary">
+              <i class="bi bi-arrow-left"></i> Kembali
+            </button>
+          </div>
+
+          <!-- MISTIK Project -->
+          <div id="mistik-project" class="portfolio-project-detail" style="display: none;">
+            <div class="project-title-section" data-aos="fade-up">
+              <h2>MISTIK</h2>
+            </div>
+            
+            <div class="project-hero-image" data-aos="fade-up">
+              <img src="assets/img/portfolio/MISTIK LOGO.jpg" alt="MISTIK" class="img-fluid">
+            </div>
+
+            <div class="project-items-grid">
+              <div class="row gy-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="col-md-6 col-lg-4">
+                  <div class="portfolio-item">
+                    <img src="assets/img/portfolio/MISTIK LOGO.jpg" class="img-fluid" alt="Mistik">
+                    <div class="portfolio-info">
+                      <h4>Mistik</h4>
+                      <p>Instagram profile</p>
+                      <a href="assets/img/portfolio/MISTIK LOGO.jpg" title="Mistik" data-gallery="portfolio-gallery-mistik" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                      <a href="https://www.instagram.com/mistikkk77?igsh=MTIwdTJzbHJ0enFqcw==" title="View on Instagram" class="details-link" target="_blank" rel="noopener noreferrer"><i class="bi bi-link-45deg"></i></a>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </div><!-- End Portfolio Item -->
+            </div>
+          </div>
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-hive">
-              <img src="assets/img/portfolio/logo hive.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Hive - Project 1</h4>
-                <p>Social media design content</p>
-                <a href="assets/img/portfolio/logo hive.png" title="Hive - Project 1" data-gallery="portfolio-gallery-hive" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="https://www.instagram.com/p/DTK62rJE0Wa/?igsh=MWhsYThhZXhyZGp1cw==" title="View on Instagram" class="details-link" target="_blank" rel="noopener noreferrer"><i class="bi bi-link-45deg"></i></a>
+          <!-- HIVE Project -->
+          <div id="hive-project" class="portfolio-project-detail" style="display: none;">
+            <div class="project-title-section" data-aos="fade-up">
+              <h2>HIVE</h2>
+            </div>
+            
+            <div class="project-hero-image" data-aos="fade-up">
+              <img src="assets/img/portfolio/logo hive.png" alt="HIVE" class="img-fluid">
+            </div>
+
+            <div class="project-items-grid">
+              <div class="row gy-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="col-md-6 col-lg-4">
+                  <div class="portfolio-item">
+                    <img src="assets/img/portfolio/logo hive.png" class="img-fluid" alt="Hive 1">
+                    <div class="portfolio-info">
+                      <h4>Hive - Project 1</h4>
+                      <p>Social media design</p>
+                      <a href="assets/img/portfolio/logo hive.png" title="Hive 1" data-gallery="portfolio-gallery-hive" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                      <a href="https://www.instagram.com/p/DTK62rJE0Wa/?igsh=MWhsYThhZXhyZGp1cw==" title="View on Instagram" class="details-link" target="_blank" rel="noopener noreferrer"><i class="bi bi-link-45deg"></i></a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                  <div class="portfolio-item">
+                    <img src="assets/img/portfolio/logo hive.png" class="img-fluid" alt="Hive 2">
+                    <div class="portfolio-info">
+                      <h4>Hive - Project 2</h4>
+                      <p>Social media design</p>
+                      <a href="assets/img/portfolio/logo hive.png" title="Hive 2" data-gallery="portfolio-gallery-hive" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                      <a href="https://www.instagram.com/p/DTIVzBykzZm/?igsh=dG13ajBnaGh2ZDE1" title="View on Instagram" class="details-link" target="_blank" rel="noopener noreferrer"><i class="bi bi-link-45deg"></i></a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                  <div class="portfolio-item">
+                    <img src="assets/img/portfolio/logo hive.png" class="img-fluid" alt="Hive 3">
+                    <div class="portfolio-info">
+                      <h4>Hive - Project 3</h4>
+                      <p>Social media design</p>
+                      <a href="assets/img/portfolio/logo hive.png" title="Hive 3" data-gallery="portfolio-gallery-hive" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                      <a href="https://www.instagram.com/p/DTImOFVkwti/?igsh=MTJycnczdDU5OWFsaw==" title="View on Instagram" class="details-link" target="_blank" rel="noopener noreferrer"><i class="bi bi-link-45deg"></i></a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                  <div class="portfolio-item">
+                    <img src="assets/img/portfolio/logo hive.png" class="img-fluid" alt="Hive 4">
+                    <div class="portfolio-info">
+                      <h4>Hive - Project 4</h4>
+                      <p>Social media design</p>
+                      <a href="assets/img/portfolio/logo hive.png" title="Hive 4" data-gallery="portfolio-gallery-hive" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                      <a href="https://www.instagram.com/p/DTCqS-gk-ZA/?igsh=MTd2dHN5dHBveWltaA==" title="View on Instagram" class="details-link" target="_blank" rel="noopener noreferrer"><i class="bi bi-link-45deg"></i></a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                  <div class="portfolio-item">
+                    <img src="assets/img/portfolio/logo hive.png" class="img-fluid" alt="Hive 5">
+                    <div class="portfolio-info">
+                      <h4>Hive - Project 5</h4>
+                      <p>Social media design</p>
+                      <a href="assets/img/portfolio/logo hive.png" title="Hive 5" data-gallery="portfolio-gallery-hive" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                      <a href="https://www.instagram.com/p/DS4K4BlkxQs/?igsh=MXVpbGZjcGd5bnQxdQ==" title="View on Instagram" class="details-link" target="_blank" rel="noopener noreferrer"><i class="bi bi-link-45deg"></i></a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                  <div class="portfolio-item">
+                    <img src="assets/img/portfolio/logo hive.png" class="img-fluid" alt="Hive 6">
+                    <div class="portfolio-info">
+                      <h4>Hive - Project 6</h4>
+                      <p>Social media design</p>
+                      <a href="assets/img/portfolio/logo hive.png" title="Hive 6" data-gallery="portfolio-gallery-hive" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                      <a href="https://www.instagram.com/p/DSwj6HnE27t/?igsh=MTc0ejF0ZmttMzloeQ==" title="View on Instagram" class="details-link" target="_blank" rel="noopener noreferrer"><i class="bi bi-link-45deg"></i></a>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </div><!-- End Portfolio Item -->
+            </div>
+          </div>
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-hive">
-              <img src="assets/img/portfolio/logo hive.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
+          <!-- SENJAYA Project -->
+          <div id="senjaya-project" class="portfolio-project-detail" style="display: none;">
+            <div class="project-title-section" data-aos="fade-up">
+              <h2>SENJAYA</h2>
+            </div>
+            
+            <div class="project-hero-image" data-aos="fade-up">
+              <img src="assets/img/portfolio/JAYA.png" alt="SENJAYA" class="img-fluid">
+            </div>
 
-                <h4>Hive - Project 2</h4>
-                <p>Social media design content</p>
-                <a href="assets/img/portfolio/logo hive.png" title="Hive - Project 2" data-gallery="portfolio-gallery-hive" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="https://www.instagram.com/p/DTIVzBykzZm/?igsh=dG13ajBnaGh2ZDE1" title="View on Instagram" class="details-link" target="_blank" rel="noopener noreferrer"><i class="bi bi-link-45deg"></i></a>
+            <div class="project-items-grid">
+              <div class="row gy-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="col-md-6 col-lg-4">
+                  <div class="portfolio-item">
+                    <img src="assets/img/portfolio/JAYA.png" class="img-fluid" alt="SENJAYA">
+                    <div class="portfolio-info">
+                      <h4>SENJAYA - Mascot</h4>
+                      <p>Pembuatan maskot untuk branding</p>
+                      <a href="assets/img/portfolio/JAYA.png" title="SENJAYA" data-gallery="portfolio-gallery-senjaya" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                      <a href="https://www.instagram.com/p/C7a0LbvpX0a/?igsh=MWJoYzZsZHhhbjBqNQ==" title="View on Instagram" class="details-link" target="_blank" rel="noopener noreferrer"><i class="bi bi-link-45deg"></i></a>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-hive">
-              <img src="assets/img/portfolio/logo hive.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Hive - Project 3</h4>
-                <p>Social media design content</p>
-                <a href="assets/img/portfolio/logo hive.png" title="Hive - Project 3" data-gallery="portfolio-gallery-hive" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="https://www.instagram.com/p/DTImOFVkwti/?igsh=MTJycnczdDU5OWFsaw==" title="View on Instagram" class="details-link" target="_blank" rel="noopener noreferrer"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-hive">
-              <img src="assets/img/portfolio/logo hive.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Hive - Project 4</h4>
-                <p>Social media design content</p>
-                <a href="assets/img/portfolio/logo hive.png" title="Hive - Project 4" data-gallery="portfolio-gallery-hive" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="https://www.instagram.com/p/DTCqS-gk-ZA/?igsh=MTd2dHN5dHBveWltaA==" title="View on Instagram" class="details-link" target="_blank" rel="noopener noreferrer"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-hive">
-              <img src="assets/img/portfolio/logo hive.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Hive - Project 5</h4>
-                <p>Social media design content</p>
-                <a href="assets/img/portfolio/logo hive.png" title="Hive - Project 5" data-gallery="portfolio-gallery-hive" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="https://www.instagram.com/p/DS4K4BlkxQs/?igsh=MXVpbGZjcGd5bnQxdQ==" title="View on Instagram" class="details-link" target="_blank" rel="noopener noreferrer"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-hive">
-              <img src="assets/img/portfolio/logo hive.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Hive - Project 6</h4>
-                <p>Social media design content</p>
-                <a href="assets/img/portfolio/logo hive.png" title="Hive - Project 6" data-gallery="portfolio-gallery-hive" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="https://www.instagram.com/p/DSwj6HnE27t/?igsh=MTc0ejF0ZmttMzloeQ==" title="View on Instagram" class="details-link" target="_blank" rel="noopener noreferrer"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-senjaya">
-              <img src="assets/img/portfolio/JAYA.png" class="img-fluid" alt="SENJAYA - Mascot Creation">
-              <div class="portfolio-info">
-                <h4>SENJAYA - Mascot Creation</h4>
-                <p>Pembuatan maskot untuk kebutuhan branding</p>
-                <a href="assets/img/portfolio/JAYA.png" title="SENJAYA - Mascot Creation" data-gallery="portfolio-gallery-senjaya" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="https://www.instagram.com/p/C7a0LbvpX0a/?igsh=MWJoYzZsZHhhbjBqNQ==" title="View on Instagram" class="details-link" target="_blank" rel="noopener noreferrer"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-          </div><!-- End Portfolio Container -->
+            </div>
+          </div>
 
         </div>
 
